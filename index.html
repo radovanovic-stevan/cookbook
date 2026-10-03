@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Family Cookbook</title>
+  <meta name="description" content="A flip-through cookbook with recipes you can add, edit, filter and delete.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon" aria-hidden="true">📖</span>
+      <span class="brand-name">Family Cookbook</span>
+    </div>
+
+    <div class="search">
+      <input id="search" type="search" placeholder="Search recipes…" aria-label="Search recipes" autocomplete="off">
+    </div>
+
+    <div class="actions">
+      <button id="toggleFilters" class="btn" aria-expanded="false" aria-controls="filters">
+        Filters <span id="filterCount" class="badge" hidden>0</span>
+      </button>
+      <button id="newRecipe" class="btn btn-primary">+ New recipe</button>
+      <div class="menu">
+        <button id="dataMenuBtn" class="btn" aria-haspopup="true" aria-expanded="false">
+          Data <span id="syncDot" class="dot" title="Saved"></span>
+        </button>
+        <div id="dataMenu" class="menu-list" role="menu" hidden>
+          <p id="syncStatus" class="menu-status"></p>
+          <button role="menuitem" data-action="export">⬇ Download recipes.json</button>
+          <button role="menuitem" data-action="import">⬆ Import recipes.json…</button>
+          <button role="menuitem" data-action="github">☁ Save to GitHub…</button>
+          <hr>
+          <button role="menuitem" data-action="reset">↺ Discard browser changes</button>
+        </div>
+      </div>
+      <input id="importFile" type="file" accept="application/json,.json" hidden>
+    </div>
+  </header>
+
+  <section id="filters" class="filters" hidden>
+    <div class="filter-group filter-ingredients">
+      <div class="filter-head">
+        <h3>Ingredients</h3>
+        <div class="seg" role="radiogroup" aria-label="Ingredient matching">
+          <button type="button" data-mode="all" class="active" role="radio" aria-checked="true">Has all</button>
+          <button type="button" data-mode="any" role="radio" aria-checked="false">Has any</button>
+        </div>
+        <input id="ingredientSearch" type="search" placeholder="Find ingredient…" aria-label="Find ingredient">
+      </div>
+      <div id="ingredientChips" class="chips"></div>
+    </div>
+    <div class="filter-row">
+      <div class="filter-group">
+        <h3>Preparation</h3>
+        <div id="preparationChips" class="chips"></div>
+      </div>
+      <div class="filter-group">
+        <h3>Course</h3>
+        <div id="categoryChips" class="chips"></div>
+      </div>
+      <div class="filter-group">
+        <h3>Cuisine</h3>
+        <div id="cuisineChips" class="chips"></div>
+      </div>
+      <div class="filter-group">
+        <h3>Difficulty</h3>
+        <div id="difficultyChips" class="chips"></div>
+      </div>
+      <div class="filter-group">
+        <h3>Total time</h3>
+        <label class="range">
+          <input id="maxTime" type="range" min="0" max="240" step="5" value="240">
+          <span id="maxTimeLabel">Any</span>
+        </label>
+      </div>
+    </div>
+    <div class="filter-foot">
+      <span id="resultCount"></span>
+      <button id="clearFilters" class="btn btn-link" type="button">Clear all filters</button>
+    </div>
+  </section>
+
+  <main class="stage">
+    <button id="prevBtn" class="nav nav-prev" aria-label="Previous page">‹</button>
+    <div id="book" class="book" aria-live="polite">
+      <div id="pages" class="pages"></div>
+    </div>
+    <button id="nextBtn" class="nav nav-next" aria-label="Next page">›</button>
+  </main>
+  <p class="hint">Use ← → keys, swipe, or click the page corners to turn pages.</p>
+
+  <!-- Create / edit recipe -->
+  <dialog id="recipeDialog" class="dialog">
+    <form id="recipeForm" method="dialog" novalidate>
+      <header class="dialog-head">
+        <h2 id="recipeDialogTitle">New recipe</h2>
+        <button type="button" class="icon-btn" data-close aria-label="Close">✕</button>
+      </header>
+      <div class="dialog-body">
+        <div class="grid">
+          <label class="span-3">Title
+            <input name="title" required maxlength="80" placeholder="Grandma's apple pie">
+          </label>
+          <label>Emoji
+            <input name="emoji" maxlength="4" placeholder="🍰">
+          </label>
+          <label class="span-4">Short description
+            <textarea name="description" rows="2" maxlength="240" placeholder="What makes this dish special?"></textarea>
+          </label>
+          <label class="span-2">Preparation
+            <input name="preparation" list="dl-preparation" placeholder="Baked" required>
+          </label>
+          <label class="span-2">Course
+            <input name="category" list="dl-category" placeholder="Dessert">
+          </label>
+          <label class="span-2">Cuisine
+            <input name="cuisine" list="dl-cuisine" placeholder="French">
+          </label>
+          <label class="span-2">Difficulty
+            <select name="difficulty">
+              <option>Easy</option>
+              <option>Medium</option>
+              <option>Hard</option>
+            </select>
+          </label>
+          <label>Prep (min)
+            <input name="prepTime" type="number" min="0" step="1" value="0">
+          </label>
+          <label>Cook (min)
+            <input name="cookTime" type="number" min="0" step="1" value="0">
+          </label>
+          <label>Servings
+            <input name="servings" type="number" min="1" step="1" value="4">
+          </label>
+          <label>Image URL
+            <input name="image" type="url" placeholder="optional">
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>Ingredients</legend>
+          <div id="ingredientRows" class="rows"></div>
+          <button type="button" class="btn btn-small" id="addIngredient">+ Add ingredient</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Method</legend>
+          <div id="stepRows" class="rows"></div>
+          <button type="button" class="btn btn-small" id="addStep">+ Add step</button>
+        </fieldset>
+
+        <label>Tags <small>(comma separated)</small>
+          <input name="tags" placeholder="vegetarian, quick">
+        </label>
+        <p id="formError" class="form-error" role="alert"></p>
+      </div>
+      <footer class="dialog-foot">
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn btn-primary">Save recipe</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <!-- GitHub sync -->
+  <dialog id="githubDialog" class="dialog dialog-narrow">
+    <form id="githubForm" method="dialog">
+      <header class="dialog-head">
+        <h2>Save to GitHub</h2>
+        <button type="button" class="icon-btn" data-close aria-label="Close">✕</button>
+      </header>
+      <div class="dialog-body">
+        <p class="muted">Commits your recipes to <code>recipes.json</code> in the repository. The site redeploys automatically after the commit (about a minute).
+          You need a <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">fine-grained token</a> with <em>Contents: read &amp; write</em> on this repository.</p>
+        <div class="grid">
+          <label class="span-2">Owner<input name="owner" required></label>
+          <label class="span-2">Repository<input name="repo" required></label>
+          <label class="span-2">Branch<input name="branch" placeholder="default branch"></label>
+          <label class="span-2">File path<input name="path" required value="data/recipes.json"></label>
+          <label class="span-4">Token<input name="token" type="password" required autocomplete="off"></label>
+          <label class="span-4 check"><input name="remember" type="checkbox"> Remember token in this browser</label>
+        </div>
+        <p id="githubError" class="form-error" role="alert"></p>
+      </div>
+      <footer class="dialog-foot">
+        <button type="button" class="btn" data-close>Cancel</button>
+        <button type="submit" class="btn btn-primary" id="githubSubmit">Commit recipes.json</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <datalist id="dl-preparation"></datalist>
+  <datalist id="dl-category"></datalist>
+  <datalist id="dl-cuisine"></datalist>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
