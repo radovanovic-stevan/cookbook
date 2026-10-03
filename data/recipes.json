@@ -1,316 +1,1268 @@
 [
   {
     "id": "buttermilk-pancakes",
-    "title": "Fluffy Buttermilk Pancakes",
+    "title": {
+      "en": "Fluffy Buttermilk Pancakes",
+      "sr": "Pufnaste palačinke sa mlaćenicom"
+    },
     "emoji": "🥞",
-    "description": "Tall, tender pancakes with crisp buttery edges. A Sunday morning classic.",
-    "category": "Breakfast",
-    "preparation": "Pan-fried",
-    "cuisine": "American",
+    "description": {
+      "en": "Tall, tender pancakes with crisp buttery edges. A Sunday morning classic.",
+      "sr": "Visoke, mekane američke palačinke sa hrskavim ivicama od putera. Klasik za nedeljno jutro."
+    },
+    "category": {
+      "en": "Breakfast",
+      "sr": "Doručak"
+    },
+    "preparation": {
+      "en": "Pan-fried",
+      "sr": "Prženo u tiganju"
+    },
+    "cuisine": {
+      "en": "American",
+      "sr": "Američka"
+    },
     "difficulty": "Easy",
     "prepTime": 10,
     "cookTime": 15,
     "servings": 4,
     "ingredients": [
-      { "amount": "250 g", "name": "flour" },
-      { "amount": "350 ml", "name": "buttermilk" },
-      { "amount": "2", "name": "eggs" },
-      { "amount": "2 tbsp", "name": "sugar" },
-      { "amount": "2 tsp", "name": "baking powder" },
-      { "amount": "1/2 tsp", "name": "baking soda" },
-      { "amount": "1 pinch", "name": "salt" },
-      { "amount": "50 g", "name": "butter" }
+      {
+        "amount": "250 g",
+        "name": {
+          "en": "flour",
+          "sr": "brašno"
+        }
+      },
+      {
+        "amount": "350 ml",
+        "name": {
+          "en": "buttermilk",
+          "sr": "mlaćenica"
+        }
+      },
+      {
+        "amount": "2",
+        "name": {
+          "en": "eggs",
+          "sr": "jaja"
+        }
+      },
+      {
+        "amount": {
+          "en": "2 tbsp",
+          "sr": "2 kašike"
+        },
+        "name": {
+          "en": "sugar",
+          "sr": "šećer"
+        }
+      },
+      {
+        "amount": {
+          "en": "2 tsp",
+          "sr": "2 kašičice"
+        },
+        "name": {
+          "en": "baking powder",
+          "sr": "prašak za pecivo"
+        }
+      },
+      {
+        "amount": {
+          "en": "1/2 tsp",
+          "sr": "1/2 kašičice"
+        },
+        "name": {
+          "en": "baking soda",
+          "sr": "soda bikarbona"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 pinch",
+          "sr": "prstohvat"
+        },
+        "name": {
+          "en": "salt",
+          "sr": "so"
+        }
+      },
+      {
+        "amount": "50 g",
+        "name": {
+          "en": "butter",
+          "sr": "puter"
+        }
+      }
     ],
-    "steps": [
-      "Whisk the flour, sugar, baking powder, baking soda and salt in a large bowl.",
-      "Melt the butter. In another bowl whisk the buttermilk, eggs and melted butter.",
-      "Pour the wet ingredients into the dry ones and stir until just combined. A few lumps are fine.",
-      "Rest the batter for 5 minutes while a non-stick pan heats over medium heat.",
-      "Ladle 1/4 cup of batter per pancake. Flip when bubbles form on top, then cook 1 more minute.",
-      "Serve warm with maple syrup and berries."
-    ],
-    "tags": ["vegetarian", "sweet", "weekend"]
+    "steps": {
+      "en": [
+        "Whisk the flour, sugar, baking powder, baking soda and salt in a large bowl.",
+        "Melt the butter. In another bowl whisk the buttermilk, eggs and melted butter.",
+        "Pour the wet ingredients into the dry ones and stir until just combined. A few lumps are fine.",
+        "Rest the batter for 5 minutes while a non-stick pan heats over medium heat.",
+        "Ladle 1/4 cup of batter per pancake. Flip when bubbles form on top, then cook 1 more minute.",
+        "Serve warm with maple syrup and berries."
+      ],
+      "sr": [
+        "U velikoj činiji umutite brašno, šećer, prašak za pecivo, sodu bikarbonu i so.",
+        "Otopite puter. U drugoj činiji umutite mlaćenicu, jaja i otopljeni puter.",
+        "Sipajte tečne sastojke u suve i mešajte samo dok se ne sjedine. Nekoliko grudvica je u redu.",
+        "Ostavite smesu da odstoji 5 minuta dok se tiganj bez lepljenja zagreva na srednjoj vatri.",
+        "Sipajte 1/4 šolje smese po palačinki. Okrenite kada se na vrhu pojave mehurići, pa pecite još minut.",
+        "Služite toplo sa javorovim sirupom i bobičastim voćem."
+      ]
+    },
+    "tags": {
+      "en": [
+        "vegetarian",
+        "sweet",
+        "weekend"
+      ],
+      "sr": [
+        "vegetarijansko",
+        "slatko",
+        "vikend"
+      ]
+    }
   },
   {
     "id": "margherita-pizza",
-    "title": "Margherita Pizza",
+    "title": {
+      "en": "Margherita Pizza",
+      "sr": "Pica margarita"
+    },
     "emoji": "🍕",
-    "description": "Blistered Neapolitan-style crust with tomato, mozzarella and fresh basil.",
-    "category": "Main",
-    "preparation": "Baked",
-    "cuisine": "Italian",
+    "description": {
+      "en": "Blistered Neapolitan-style crust with tomato, mozzarella and fresh basil.",
+      "sr": "Napolitanska kora sa mehurićima, paradajzom, mocarelom i svežim bosiljkom."
+    },
+    "category": {
+      "en": "Main",
+      "sr": "Glavno jelo"
+    },
+    "preparation": {
+      "en": "Baked",
+      "sr": "Pečeno u rerni"
+    },
+    "cuisine": {
+      "en": "Italian",
+      "sr": "Italijanska"
+    },
     "difficulty": "Medium",
     "prepTime": 90,
     "cookTime": 10,
     "servings": 2,
     "ingredients": [
-      { "amount": "300 g", "name": "flour" },
-      { "amount": "200 ml", "name": "water" },
-      { "amount": "3 g", "name": "yeast" },
-      { "amount": "1 tsp", "name": "salt" },
-      { "amount": "2 tbsp", "name": "olive oil" },
-      { "amount": "200 g", "name": "tomatoes" },
-      { "amount": "125 g", "name": "mozzarella" },
-      { "amount": "1 handful", "name": "basil" }
+      {
+        "amount": "300 g",
+        "name": {
+          "en": "flour",
+          "sr": "brašno"
+        }
+      },
+      {
+        "amount": "200 ml",
+        "name": {
+          "en": "water",
+          "sr": "voda"
+        }
+      },
+      {
+        "amount": "3 g",
+        "name": {
+          "en": "yeast",
+          "sr": "kvasac"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 tsp",
+          "sr": "1 kašičica"
+        },
+        "name": {
+          "en": "salt",
+          "sr": "so"
+        }
+      },
+      {
+        "amount": {
+          "en": "2 tbsp",
+          "sr": "2 kašike"
+        },
+        "name": {
+          "en": "olive oil",
+          "sr": "maslinovo ulje"
+        }
+      },
+      {
+        "amount": "200 g",
+        "name": {
+          "en": "tomatoes",
+          "sr": "paradajz"
+        }
+      },
+      {
+        "amount": "125 g",
+        "name": {
+          "en": "mozzarella",
+          "sr": "mocarela"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 handful",
+          "sr": "šaka"
+        },
+        "name": {
+          "en": "basil",
+          "sr": "bosiljak"
+        }
+      }
     ],
-    "steps": [
-      "Mix the flour, water, yeast and salt into a shaggy dough. Knead for 8 minutes until smooth.",
-      "Cover and let rise for 1 hour, until doubled.",
-      "Heat the oven to its maximum temperature with a baking tray or stone inside.",
-      "Crush the tomatoes with a pinch of salt and a splash of olive oil.",
-      "Stretch the dough thin, spread the tomato and tear the mozzarella over it.",
-      "Bake for 8–10 minutes until the crust is blistered. Finish with basil and olive oil."
-    ],
-    "tags": ["vegetarian", "classic"]
+    "steps": {
+      "en": [
+        "Mix the flour, water, yeast and salt into a shaggy dough. Knead for 8 minutes until smooth.",
+        "Cover and let rise for 1 hour, until doubled.",
+        "Heat the oven to its maximum temperature with a baking tray or stone inside.",
+        "Crush the tomatoes with a pinch of salt and a splash of olive oil.",
+        "Stretch the dough thin, spread the tomato and tear the mozzarella over it.",
+        "Bake for 8–10 minutes until the crust is blistered. Finish with basil and olive oil."
+      ],
+      "sr": [
+        "Pomešajte brašno, vodu, kvasac i so u grubo testo. Mesite 8 minuta dok ne postane glatko.",
+        "Pokrijte i ostavite da naraste 1 sat, dok ne udvostruči zapreminu.",
+        "Zagrejte rernu na najjaču temperaturu sa limom ili kamenom za picu unutra.",
+        "Izgnječite paradajz sa prstohvatom soli i malo maslinovog ulja.",
+        "Tanko razvucite testo, premažite paradajzom i preko rasporedite iscepkanu mocarelu.",
+        "Pecite 8–10 minuta dok kora ne dobije mehuriće. Završite bosiljkom i maslinovim uljem."
+      ]
+    },
+    "tags": {
+      "en": [
+        "vegetarian",
+        "classic"
+      ],
+      "sr": [
+        "vegetarijansko",
+        "klasik"
+      ]
+    }
   },
   {
     "id": "greek-salad",
-    "title": "Greek Village Salad",
+    "title": {
+      "en": "Greek Village Salad",
+      "sr": "Grčka seoska salata"
+    },
     "emoji": "🥗",
-    "description": "Horiatiki: chunky vegetables, a slab of feta and plenty of good olive oil.",
-    "category": "Salad",
-    "preparation": "Raw",
-    "cuisine": "Greek",
+    "description": {
+      "en": "Horiatiki: chunky vegetables, a slab of feta and plenty of good olive oil.",
+      "sr": "Horijatiki: krupno sečeno povrće, komad fete i dosta dobrog maslinovog ulja."
+    },
+    "category": {
+      "en": "Salad",
+      "sr": "Salata"
+    },
+    "preparation": {
+      "en": "Raw",
+      "sr": "Sirovo"
+    },
+    "cuisine": {
+      "en": "Greek",
+      "sr": "Grčka"
+    },
     "difficulty": "Easy",
     "prepTime": 15,
     "cookTime": 0,
     "servings": 4,
     "ingredients": [
-      { "amount": "4", "name": "tomatoes" },
-      { "amount": "1", "name": "cucumber" },
-      { "amount": "1", "name": "red onion" },
-      { "amount": "1", "name": "green pepper" },
-      { "amount": "200 g", "name": "feta" },
-      { "amount": "1 handful", "name": "olives" },
-      { "amount": "4 tbsp", "name": "olive oil" },
-      { "amount": "1 tsp", "name": "oregano" }
+      {
+        "amount": "4",
+        "name": {
+          "en": "tomatoes",
+          "sr": "paradajz"
+        }
+      },
+      {
+        "amount": "1",
+        "name": {
+          "en": "cucumber",
+          "sr": "krastavac"
+        }
+      },
+      {
+        "amount": "1",
+        "name": {
+          "en": "red onion",
+          "sr": "crveni luk"
+        }
+      },
+      {
+        "amount": "1",
+        "name": {
+          "en": "green pepper",
+          "sr": "zelena paprika"
+        }
+      },
+      {
+        "amount": "200 g",
+        "name": {
+          "en": "feta",
+          "sr": "feta sir"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 handful",
+          "sr": "šaka"
+        },
+        "name": {
+          "en": "olives",
+          "sr": "masline"
+        }
+      },
+      {
+        "amount": {
+          "en": "4 tbsp",
+          "sr": "4 kašike"
+        },
+        "name": {
+          "en": "olive oil",
+          "sr": "maslinovo ulje"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 tsp",
+          "sr": "1 kašičica"
+        },
+        "name": {
+          "en": "oregano",
+          "sr": "origano"
+        }
+      }
     ],
-    "steps": [
-      "Cut the tomatoes into wedges and the cucumber into thick half-moons.",
-      "Slice the onion and pepper into thin rings.",
-      "Combine the vegetables and olives in a wide bowl and season with salt.",
-      "Lay the feta on top, drizzle generously with olive oil and sprinkle with oregano."
-    ],
-    "tags": ["vegetarian", "gluten-free", "summer"]
+    "steps": {
+      "en": [
+        "Cut the tomatoes into wedges and the cucumber into thick half-moons.",
+        "Slice the onion and pepper into thin rings.",
+        "Combine the vegetables and olives in a wide bowl and season with salt.",
+        "Lay the feta on top, drizzle generously with olive oil and sprinkle with oregano."
+      ],
+      "sr": [
+        "Isecite paradajz na kriške, a krastavac na deblje polukrugove.",
+        "Luk i papriku isecite na tanke kolutove.",
+        "Pomešajte povrće i masline u širokoj činiji i posolite.",
+        "Položite fetu odozgo, obilno prelijte maslinovim uljem i pospite origanom."
+      ]
+    },
+    "tags": {
+      "en": [
+        "vegetarian",
+        "gluten-free",
+        "summer"
+      ],
+      "sr": [
+        "vegetarijansko",
+        "bez glutena",
+        "leto"
+      ]
+    }
   },
   {
     "id": "chicken-tikka-masala",
-    "title": "Chicken Tikka Masala",
+    "title": {
+      "en": "Chicken Tikka Masala",
+      "sr": "Piletina tika masala"
+    },
     "emoji": "🍛",
-    "description": "Charred, yogurt-marinated chicken in a creamy spiced tomato sauce.",
-    "category": "Main",
-    "preparation": "Simmered",
-    "cuisine": "Indian",
+    "description": {
+      "en": "Charred, yogurt-marinated chicken in a creamy spiced tomato sauce.",
+      "sr": "Zapečena piletina marinirana u jogurtu, u kremastom začinjenom sosu od paradajza."
+    },
+    "category": {
+      "en": "Main",
+      "sr": "Glavno jelo"
+    },
+    "preparation": {
+      "en": "Simmered",
+      "sr": "Krčkano"
+    },
+    "cuisine": {
+      "en": "Indian",
+      "sr": "Indijska"
+    },
     "difficulty": "Medium",
     "prepTime": 30,
     "cookTime": 40,
     "servings": 4,
     "ingredients": [
-      { "amount": "600 g", "name": "chicken" },
-      { "amount": "150 g", "name": "yogurt" },
-      { "amount": "2 tbsp", "name": "garam masala" },
-      { "amount": "4 cloves", "name": "garlic" },
-      { "amount": "1 thumb", "name": "ginger" },
-      { "amount": "1", "name": "onion" },
-      { "amount": "400 g", "name": "tomatoes" },
-      { "amount": "150 ml", "name": "cream" },
-      { "amount": "30 g", "name": "butter" },
-      { "amount": "1 tsp", "name": "salt" }
+      {
+        "amount": "600 g",
+        "name": {
+          "en": "chicken",
+          "sr": "piletina"
+        }
+      },
+      {
+        "amount": "150 g",
+        "name": {
+          "en": "yogurt",
+          "sr": "jogurt"
+        }
+      },
+      {
+        "amount": {
+          "en": "2 tbsp",
+          "sr": "2 kašike"
+        },
+        "name": {
+          "en": "garam masala",
+          "sr": "garam masala"
+        }
+      },
+      {
+        "amount": {
+          "en": "4 cloves",
+          "sr": "4 čena"
+        },
+        "name": {
+          "en": "garlic",
+          "sr": "beli luk"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 thumb",
+          "sr": "komadić od 2 cm"
+        },
+        "name": {
+          "en": "ginger",
+          "sr": "đumbir"
+        }
+      },
+      {
+        "amount": "1",
+        "name": {
+          "en": "onion",
+          "sr": "crni luk"
+        }
+      },
+      {
+        "amount": "400 g",
+        "name": {
+          "en": "tomatoes",
+          "sr": "paradajz"
+        }
+      },
+      {
+        "amount": "150 ml",
+        "name": {
+          "en": "cream",
+          "sr": "slatka pavlaka"
+        }
+      },
+      {
+        "amount": "30 g",
+        "name": {
+          "en": "butter",
+          "sr": "puter"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 tsp",
+          "sr": "1 kašičica"
+        },
+        "name": {
+          "en": "salt",
+          "sr": "so"
+        }
+      }
     ],
-    "steps": [
-      "Mix the yogurt with half the garam masala, half the garlic and ginger, and the salt. Coat the chicken and marinate for at least 20 minutes.",
-      "Grill or pan-sear the chicken pieces until charred at the edges.",
-      "Melt the butter and soften the chopped onion with the remaining garlic, ginger and garam masala.",
-      "Add the tomatoes and simmer for 15 minutes, then blend until smooth.",
-      "Stir in the cream and the chicken. Simmer for 10 minutes more.",
-      "Serve with rice or naan."
-    ],
-    "tags": ["spicy", "comfort"]
+    "steps": {
+      "en": [
+        "Mix the yogurt with half the garam masala, half the garlic and ginger, and the salt. Coat the chicken and marinate for at least 20 minutes.",
+        "Grill or pan-sear the chicken pieces until charred at the edges.",
+        "Melt the butter and soften the chopped onion with the remaining garlic, ginger and garam masala.",
+        "Add the tomatoes and simmer for 15 minutes, then blend until smooth.",
+        "Stir in the cream and the chicken. Simmer for 10 minutes more.",
+        "Serve with rice or naan."
+      ],
+      "sr": [
+        "Pomešajte jogurt sa polovinom garam masale, polovinom belog luka i đumbira, i solju. Uvaljajte piletinu i marinirajte najmanje 20 minuta.",
+        "Ispecite komade piletine na roštilju ili u tiganju dok ivice ne pocrne.",
+        "Otopite puter i propržite seckani crni luk sa ostatkom belog luka, đumbira i garam masale.",
+        "Dodajte paradajz i krčkajte 15 minuta, pa izblendajte u glatki sos.",
+        "Umešajte pavlaku i piletinu. Krčkajte još 10 minuta.",
+        "Služite sa pirinčem ili naan hlebom."
+      ]
+    },
+    "tags": {
+      "en": [
+        "spicy",
+        "comfort"
+      ],
+      "sr": [
+        "ljuto",
+        "domaće"
+      ]
+    }
   },
   {
     "id": "beef-stew",
-    "title": "Slow-Cooked Beef Stew",
+    "title": {
+      "en": "Slow-Cooked Beef Stew",
+      "sr": "Sporo kuvani juneći gulaš"
+    },
     "emoji": "🍲",
-    "description": "Meltingly tender beef and root vegetables in a rich, thyme-scented gravy.",
-    "category": "Main",
-    "preparation": "Slow-cooked",
-    "cuisine": "Irish",
+    "description": {
+      "en": "Meltingly tender beef and root vegetables in a rich, thyme-scented gravy.",
+      "sr": "Junetina koja se topi u ustima i korenasto povrće u gustom sosu sa majčinom dušicom."
+    },
+    "category": {
+      "en": "Main",
+      "sr": "Glavno jelo"
+    },
+    "preparation": {
+      "en": "Slow-cooked",
+      "sr": "Sporo kuvano"
+    },
+    "cuisine": {
+      "en": "Irish",
+      "sr": "Irska"
+    },
     "difficulty": "Medium",
     "prepTime": 25,
     "cookTime": 180,
     "servings": 6,
     "ingredients": [
-      { "amount": "1 kg", "name": "beef" },
-      { "amount": "2 tbsp", "name": "flour" },
-      { "amount": "2 tbsp", "name": "olive oil" },
-      { "amount": "2", "name": "onion" },
-      { "amount": "3 cloves", "name": "garlic" },
-      { "amount": "4", "name": "carrots" },
-      { "amount": "600 g", "name": "potatoes" },
-      { "amount": "2 tbsp", "name": "tomato paste" },
-      { "amount": "1 l", "name": "beef stock" },
-      { "amount": "4 sprigs", "name": "thyme" }
+      {
+        "amount": "1 kg",
+        "name": {
+          "en": "beef",
+          "sr": "junetina"
+        }
+      },
+      {
+        "amount": {
+          "en": "2 tbsp",
+          "sr": "2 kašike"
+        },
+        "name": {
+          "en": "flour",
+          "sr": "brašno"
+        }
+      },
+      {
+        "amount": {
+          "en": "2 tbsp",
+          "sr": "2 kašike"
+        },
+        "name": {
+          "en": "olive oil",
+          "sr": "maslinovo ulje"
+        }
+      },
+      {
+        "amount": "2",
+        "name": {
+          "en": "onion",
+          "sr": "crni luk"
+        }
+      },
+      {
+        "amount": {
+          "en": "3 cloves",
+          "sr": "3 čena"
+        },
+        "name": {
+          "en": "garlic",
+          "sr": "beli luk"
+        }
+      },
+      {
+        "amount": "4",
+        "name": {
+          "en": "carrots",
+          "sr": "šargarepa"
+        }
+      },
+      {
+        "amount": "600 g",
+        "name": {
+          "en": "potatoes",
+          "sr": "krompir"
+        }
+      },
+      {
+        "amount": {
+          "en": "2 tbsp",
+          "sr": "2 kašike"
+        },
+        "name": {
+          "en": "tomato paste",
+          "sr": "paradajz pire"
+        }
+      },
+      {
+        "amount": "1 l",
+        "name": {
+          "en": "beef stock",
+          "sr": "goveđi temeljac"
+        }
+      },
+      {
+        "amount": {
+          "en": "4 sprigs",
+          "sr": "4 grančice"
+        },
+        "name": {
+          "en": "thyme",
+          "sr": "majčina dušica"
+        }
+      }
     ],
-    "steps": [
-      "Toss the beef in seasoned flour and brown it in batches in the olive oil. Set aside.",
-      "Soften the onion and garlic in the same pot, then stir in the tomato paste.",
-      "Return the beef, pour in the stock and add the thyme. Bring to a gentle simmer.",
-      "Cover and cook on the lowest heat for 2 hours.",
-      "Add the carrots and potatoes in large chunks and cook 1 hour more, until everything is tender."
-    ],
-    "tags": ["comfort", "winter"]
+    "steps": {
+      "en": [
+        "Toss the beef in seasoned flour and brown it in batches in the olive oil. Set aside.",
+        "Soften the onion and garlic in the same pot, then stir in the tomato paste.",
+        "Return the beef, pour in the stock and add the thyme. Bring to a gentle simmer.",
+        "Cover and cook on the lowest heat for 2 hours.",
+        "Add the carrots and potatoes in large chunks and cook 1 hour more, until everything is tender."
+      ],
+      "sr": [
+        "Uvaljajte junetinu u začinjeno brašno i u delovima je zapecite na maslinovom ulju. Ostavite sa strane.",
+        "U istom loncu propržite crni i beli luk, pa umešajte paradajz pire.",
+        "Vratite junetinu, nalijte temeljac i dodajte majčinu dušicu. Pustite da lagano proključa.",
+        "Poklopite i kuvajte na najslabijoj vatri 2 sata.",
+        "Dodajte krupno sečenu šargarepu i krompir i kuvajte još sat vremena, dok sve ne omekša."
+      ]
+    },
+    "tags": {
+      "en": [
+        "comfort",
+        "winter"
+      ],
+      "sr": [
+        "domaće",
+        "zima"
+      ]
+    }
   },
   {
     "id": "vegetable-stir-fry",
-    "title": "Weeknight Vegetable Stir-fry",
+    "title": {
+      "en": "Weeknight Vegetable Stir-fry",
+      "sr": "Brzo povrće iz voka"
+    },
     "emoji": "🥦",
-    "description": "Crisp vegetables tossed in a glossy garlic-ginger sauce. On the table in 25 minutes.",
-    "category": "Main",
-    "preparation": "Stir-fried",
-    "cuisine": "Chinese",
+    "description": {
+      "en": "Crisp vegetables tossed in a glossy garlic-ginger sauce. On the table in 25 minutes.",
+      "sr": "Hrskavo povrće u sjajnom sosu od belog luka i đumbira. Na stolu za 25 minuta."
+    },
+    "category": {
+      "en": "Main",
+      "sr": "Glavno jelo"
+    },
+    "preparation": {
+      "en": "Stir-fried",
+      "sr": "Prženo u voku"
+    },
+    "cuisine": {
+      "en": "Chinese",
+      "sr": "Kineska"
+    },
     "difficulty": "Easy",
     "prepTime": 15,
     "cookTime": 10,
     "servings": 2,
     "ingredients": [
-      { "amount": "1 head", "name": "broccoli" },
-      { "amount": "1", "name": "bell pepper" },
-      { "amount": "2", "name": "carrots" },
-      { "amount": "2 cloves", "name": "garlic" },
-      { "amount": "1 thumb", "name": "ginger" },
-      { "amount": "3 tbsp", "name": "soy sauce" },
-      { "amount": "1 tbsp", "name": "sesame oil" },
-      { "amount": "200 g", "name": "rice" }
+      {
+        "amount": {
+          "en": "1 head",
+          "sr": "1 glavica"
+        },
+        "name": {
+          "en": "broccoli",
+          "sr": "brokoli"
+        }
+      },
+      {
+        "amount": "1",
+        "name": {
+          "en": "bell pepper",
+          "sr": "babura paprika"
+        }
+      },
+      {
+        "amount": "2",
+        "name": {
+          "en": "carrots",
+          "sr": "šargarepa"
+        }
+      },
+      {
+        "amount": "2 cloves",
+        "name": {
+          "en": "garlic",
+          "sr": "beli luk"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 thumb",
+          "sr": "komadić od 2 cm"
+        },
+        "name": {
+          "en": "ginger",
+          "sr": "đumbir"
+        }
+      },
+      {
+        "amount": {
+          "en": "3 tbsp",
+          "sr": "3 kašike"
+        },
+        "name": {
+          "en": "soy sauce",
+          "sr": "soja sos"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 tbsp",
+          "sr": "1 kašika"
+        },
+        "name": {
+          "en": "sesame oil",
+          "sr": "susamovo ulje"
+        }
+      },
+      {
+        "amount": "200 g",
+        "name": {
+          "en": "rice",
+          "sr": "pirinač"
+        }
+      }
     ],
-    "steps": [
-      "Cook the rice according to the packet.",
-      "Cut the broccoli into florets and slice the pepper and carrots thinly.",
-      "Heat a wok until smoking, add the sesame oil, then the garlic and ginger for 30 seconds.",
-      "Add the vegetables and stir-fry on high heat for 4–5 minutes.",
-      "Splash in the soy sauce, toss to coat and serve over the rice."
-    ],
-    "tags": ["vegan", "quick"]
+    "steps": {
+      "en": [
+        "Cook the rice according to the packet.",
+        "Cut the broccoli into florets and slice the pepper and carrots thinly.",
+        "Heat a wok until smoking, add the sesame oil, then the garlic and ginger for 30 seconds.",
+        "Add the vegetables and stir-fry on high heat for 4–5 minutes.",
+        "Splash in the soy sauce, toss to coat and serve over the rice."
+      ],
+      "sr": [
+        "Skuvajte pirinač prema uputstvu na pakovanju.",
+        "Brokoli podelite na cvetiće, a papriku i šargarepu tanko isecite.",
+        "Zagrejte vok dok ne počne da se dimi, dodajte susamovo ulje, pa beli luk i đumbir na 30 sekundi.",
+        "Dodajte povrće i pržite na jakoj vatri 4–5 minuta uz stalno mešanje.",
+        "Dodajte soja sos, promešajte i služite preko pirinča."
+      ]
+    },
+    "tags": {
+      "en": [
+        "vegan",
+        "quick"
+      ],
+      "sr": [
+        "vegansko",
+        "brzo"
+      ]
+    }
   },
   {
     "id": "chocolate-chip-cookies",
-    "title": "Chocolate Chip Cookies",
+    "title": {
+      "en": "Chocolate Chip Cookies",
+      "sr": "Kolačići sa čokoladnim kapima"
+    },
     "emoji": "🍪",
-    "description": "Crisp edges, chewy centres and puddles of melted chocolate.",
-    "category": "Dessert",
-    "preparation": "Baked",
-    "cuisine": "American",
+    "description": {
+      "en": "Crisp edges, chewy centres and puddles of melted chocolate.",
+      "sr": "Hrskave ivice, žvakava sredina i barice otopljene čokolade."
+    },
+    "category": {
+      "en": "Dessert",
+      "sr": "Dezert"
+    },
+    "preparation": {
+      "en": "Baked",
+      "sr": "Pečeno u rerni"
+    },
+    "cuisine": {
+      "en": "American",
+      "sr": "Američka"
+    },
     "difficulty": "Easy",
     "prepTime": 15,
     "cookTime": 12,
     "servings": 24,
     "ingredients": [
-      { "amount": "280 g", "name": "flour" },
-      { "amount": "170 g", "name": "butter" },
-      { "amount": "100 g", "name": "sugar" },
-      { "amount": "150 g", "name": "brown sugar" },
-      { "amount": "2", "name": "eggs" },
-      { "amount": "2 tsp", "name": "vanilla" },
-      { "amount": "1 tsp", "name": "baking soda" },
-      { "amount": "1/2 tsp", "name": "salt" },
-      { "amount": "250 g", "name": "chocolate chips" }
+      {
+        "amount": "280 g",
+        "name": {
+          "en": "flour",
+          "sr": "brašno"
+        }
+      },
+      {
+        "amount": "170 g",
+        "name": {
+          "en": "butter",
+          "sr": "puter"
+        }
+      },
+      {
+        "amount": "100 g",
+        "name": {
+          "en": "sugar",
+          "sr": "šećer"
+        }
+      },
+      {
+        "amount": "150 g",
+        "name": {
+          "en": "brown sugar",
+          "sr": "smeđi šećer"
+        }
+      },
+      {
+        "amount": "2",
+        "name": {
+          "en": "eggs",
+          "sr": "jaja"
+        }
+      },
+      {
+        "amount": {
+          "en": "2 tsp",
+          "sr": "2 kašičice"
+        },
+        "name": {
+          "en": "vanilla",
+          "sr": "vanila"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 tsp",
+          "sr": "1 kašičica"
+        },
+        "name": {
+          "en": "baking soda",
+          "sr": "soda bikarbona"
+        }
+      },
+      {
+        "amount": {
+          "en": "1/2 tsp",
+          "sr": "1/2 kašičice"
+        },
+        "name": {
+          "en": "salt",
+          "sr": "so"
+        }
+      },
+      {
+        "amount": "250 g",
+        "name": {
+          "en": "chocolate chips",
+          "sr": "čokoladne kapi"
+        }
+      }
     ],
-    "steps": [
-      "Heat the oven to 180 °C and line two trays with baking paper.",
-      "Cream the soft butter with both sugars until fluffy. Beat in the eggs and vanilla.",
-      "Fold in the flour, baking soda and salt, then the chocolate chips.",
-      "Scoop balls of dough onto the trays, leaving room to spread.",
-      "Bake for 10–12 minutes until golden at the edges but still soft in the middle. Cool on the tray for 5 minutes."
-    ],
-    "tags": ["vegetarian", "sweet", "kids"]
+    "steps": {
+      "en": [
+        "Heat the oven to 180 °C and line two trays with baking paper.",
+        "Cream the soft butter with both sugars until fluffy. Beat in the eggs and vanilla.",
+        "Fold in the flour, baking soda and salt, then the chocolate chips.",
+        "Scoop balls of dough onto the trays, leaving room to spread.",
+        "Bake for 10–12 minutes until golden at the edges but still soft in the middle. Cool on the tray for 5 minutes."
+      ],
+      "sr": [
+        "Zagrejte rernu na 180 °C i obložite dva pleha papirom za pečenje.",
+        "Umutite omekšali puter sa obe vrste šećera dok ne postane penast. Umutite jaja i vanilu.",
+        "Umešajte brašno, sodu bikarbonu i so, pa čokoladne kapi.",
+        "Kašikom ređajte kuglice testa na plehove, sa dovoljno razmaka.",
+        "Pecite 10–12 minuta dok ivice ne porumene, a sredina ostane meka. Ostavite 5 minuta da se ohlade na plehu."
+      ]
+    },
+    "tags": {
+      "en": [
+        "vegetarian",
+        "sweet",
+        "kids"
+      ],
+      "sr": [
+        "vegetarijansko",
+        "slatko",
+        "za decu"
+      ]
+    }
   },
   {
     "id": "steamed-ginger-salmon",
-    "title": "Steamed Ginger Salmon",
+    "title": {
+      "en": "Steamed Ginger Salmon",
+      "sr": "Losos na pari sa đumbirom"
+    },
     "emoji": "🐟",
-    "description": "Silky salmon steamed with ginger and scallions, finished with sizzling oil.",
-    "category": "Main",
-    "preparation": "Steamed",
-    "cuisine": "Cantonese",
+    "description": {
+      "en": "Silky salmon steamed with ginger and scallions, finished with sizzling oil.",
+      "sr": "Svilenkasti losos kuvan na pari sa đumbirom i mladim lukom, preliven vrelim uljem."
+    },
+    "category": {
+      "en": "Main",
+      "sr": "Glavno jelo"
+    },
+    "preparation": {
+      "en": "Steamed",
+      "sr": "Na pari"
+    },
+    "cuisine": {
+      "en": "Cantonese",
+      "sr": "Kantonska"
+    },
     "difficulty": "Easy",
     "prepTime": 10,
     "cookTime": 12,
     "servings": 2,
     "ingredients": [
-      { "amount": "2 fillets", "name": "salmon" },
-      { "amount": "1 thumb", "name": "ginger" },
-      { "amount": "1 clove", "name": "garlic" },
-      { "amount": "3", "name": "scallions" },
-      { "amount": "2 tbsp", "name": "soy sauce" },
-      { "amount": "1 tbsp", "name": "sesame oil" },
-      { "amount": "150 g", "name": "rice" }
+      {
+        "amount": {
+          "en": "2 fillets",
+          "sr": "2 fileta"
+        },
+        "name": {
+          "en": "salmon",
+          "sr": "losos"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 thumb",
+          "sr": "komadić od 2 cm"
+        },
+        "name": {
+          "en": "ginger",
+          "sr": "đumbir"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 clove",
+          "sr": "1 čen"
+        },
+        "name": {
+          "en": "garlic",
+          "sr": "beli luk"
+        }
+      },
+      {
+        "amount": "3",
+        "name": {
+          "en": "scallions",
+          "sr": "mladi luk"
+        }
+      },
+      {
+        "amount": {
+          "en": "2 tbsp",
+          "sr": "2 kašike"
+        },
+        "name": {
+          "en": "soy sauce",
+          "sr": "soja sos"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 tbsp",
+          "sr": "1 kašika"
+        },
+        "name": {
+          "en": "sesame oil",
+          "sr": "susamovo ulje"
+        }
+      },
+      {
+        "amount": "150 g",
+        "name": {
+          "en": "rice",
+          "sr": "pirinač"
+        }
+      }
     ],
-    "steps": [
-      "Cut the ginger and scallions into fine matchsticks.",
-      "Place the salmon on a heatproof plate and scatter half the ginger over it.",
-      "Steam over boiling water for 8–10 minutes until just opaque.",
-      "Pour the soy sauce over the fish and top with the remaining ginger and the scallions.",
-      "Heat the sesame oil with the sliced garlic until sizzling and pour it over the fish. Serve with rice."
-    ],
-    "tags": ["gluten-free", "healthy", "quick"]
+    "steps": {
+      "en": [
+        "Cut the ginger and scallions into fine matchsticks.",
+        "Place the salmon on a heatproof plate and scatter half the ginger over it.",
+        "Steam over boiling water for 8–10 minutes until just opaque.",
+        "Pour the soy sauce over the fish and top with the remaining ginger and the scallions.",
+        "Heat the sesame oil with the sliced garlic until sizzling and pour it over the fish. Serve with rice."
+      ],
+      "sr": [
+        "Isecite đumbir i mladi luk na tanke štapiće.",
+        "Stavite losos na tanjir otporan na toplotu i pospite polovinom đumbira.",
+        "Kuvajte na pari iznad kipuće vode 8–10 minuta, dok riba tek ne postane neprozirna.",
+        "Prelijte ribu soja sosom i pospite ostatkom đumbira i mladim lukom.",
+        "Zagrejte susamovo ulje sa isečenim belim lukom dok ne zacvrči i prelijte preko ribe. Služite sa pirinčem."
+      ]
+    },
+    "tags": {
+      "en": [
+        "gluten-free",
+        "healthy",
+        "quick"
+      ],
+      "sr": [
+        "bez glutena",
+        "zdravo",
+        "brzo"
+      ]
+    }
   },
   {
     "id": "grilled-halloumi-skewers",
-    "title": "Grilled Halloumi Skewers",
+    "title": {
+      "en": "Grilled Halloumi Skewers",
+      "sr": "Ražnjići od halumi sira"
+    },
     "emoji": "🍢",
-    "description": "Squeaky, golden halloumi and summer vegetables with lemon and oregano.",
-    "category": "Starter",
-    "preparation": "Grilled",
-    "cuisine": "Mediterranean",
+    "description": {
+      "en": "Squeaky, golden halloumi and summer vegetables with lemon and oregano.",
+      "sr": "Zlatni halumi sir i letnje povrće sa limunom i origanom."
+    },
+    "category": {
+      "en": "Starter",
+      "sr": "Predjelo"
+    },
+    "preparation": {
+      "en": "Grilled",
+      "sr": "Na roštilju"
+    },
+    "cuisine": {
+      "en": "Mediterranean",
+      "sr": "Mediteranska"
+    },
     "difficulty": "Easy",
     "prepTime": 15,
     "cookTime": 10,
     "servings": 4,
     "ingredients": [
-      { "amount": "250 g", "name": "halloumi" },
-      { "amount": "1", "name": "zucchini" },
-      { "amount": "1", "name": "bell pepper" },
-      { "amount": "1", "name": "red onion" },
-      { "amount": "3 tbsp", "name": "olive oil" },
-      { "amount": "1", "name": "lemon" },
-      { "amount": "1 tsp", "name": "oregano" }
+      {
+        "amount": "250 g",
+        "name": {
+          "en": "halloumi",
+          "sr": "halumi sir"
+        }
+      },
+      {
+        "amount": "1",
+        "name": {
+          "en": "zucchini",
+          "sr": "tikvica"
+        }
+      },
+      {
+        "amount": "1",
+        "name": {
+          "en": "bell pepper",
+          "sr": "babura paprika"
+        }
+      },
+      {
+        "amount": "1",
+        "name": {
+          "en": "red onion",
+          "sr": "crveni luk"
+        }
+      },
+      {
+        "amount": {
+          "en": "3 tbsp",
+          "sr": "3 kašike"
+        },
+        "name": {
+          "en": "olive oil",
+          "sr": "maslinovo ulje"
+        }
+      },
+      {
+        "amount": "1",
+        "name": {
+          "en": "lemon",
+          "sr": "limun"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 tsp",
+          "sr": "1 kašičica"
+        },
+        "name": {
+          "en": "oregano",
+          "sr": "origano"
+        }
+      }
     ],
-    "steps": [
-      "Cut the halloumi and vegetables into bite-sized chunks and thread them onto skewers.",
-      "Whisk the olive oil, lemon juice and oregano, then brush it over the skewers.",
-      "Grill over high heat for 3–4 minutes per side until charred.",
-      "Squeeze over more lemon before serving."
-    ],
-    "tags": ["vegetarian", "bbq", "summer"]
+    "steps": {
+      "en": [
+        "Cut the halloumi and vegetables into bite-sized chunks and thread them onto skewers.",
+        "Whisk the olive oil, lemon juice and oregano, then brush it over the skewers.",
+        "Grill over high heat for 3–4 minutes per side until charred.",
+        "Squeeze over more lemon before serving."
+      ],
+      "sr": [
+        "Isecite halumi i povrće na komade veličine zalogaja i nanižite ih na štapiće.",
+        "Umutite maslinovo ulje, limunov sok i origano i premažite ražnjiće.",
+        "Pecite na jakoj vatri 3–4 minuta sa svake strane dok ne dobiju tragove roštilja.",
+        "Pre služenja pokapajte još limunovog soka."
+      ]
+    },
+    "tags": {
+      "en": [
+        "vegetarian",
+        "bbq",
+        "summer"
+      ],
+      "sr": [
+        "vegetarijansko",
+        "roštilj",
+        "leto"
+      ]
+    }
   },
   {
     "id": "roasted-tomato-soup",
-    "title": "Roasted Tomato Soup",
+    "title": {
+      "en": "Roasted Tomato Soup",
+      "sr": "Supa od pečenog paradajza"
+    },
     "emoji": "🍅",
-    "description": "Velvety soup made with oven-roasted tomatoes and garlic, finished with basil.",
-    "category": "Soup",
-    "preparation": "Roasted",
-    "cuisine": "Italian",
+    "description": {
+      "en": "Velvety soup made with oven-roasted tomatoes and garlic, finished with basil.",
+      "sr": "Somotasta supa od paradajza i belog luka pečenih u rerni, sa bosiljkom."
+    },
+    "category": {
+      "en": "Soup",
+      "sr": "Supa"
+    },
+    "preparation": {
+      "en": "Roasted",
+      "sr": "Pečeno"
+    },
+    "cuisine": {
+      "en": "Italian",
+      "sr": "Italijanska"
+    },
     "difficulty": "Easy",
     "prepTime": 10,
     "cookTime": 45,
     "servings": 4,
     "ingredients": [
-      { "amount": "1 kg", "name": "tomatoes" },
-      { "amount": "1", "name": "onion" },
-      { "amount": "1 head", "name": "garlic" },
-      { "amount": "3 tbsp", "name": "olive oil" },
-      { "amount": "500 ml", "name": "vegetable stock" },
-      { "amount": "100 ml", "name": "cream" },
-      { "amount": "1 handful", "name": "basil" },
-      { "amount": "1 tsp", "name": "salt" }
+      {
+        "amount": "1 kg",
+        "name": {
+          "en": "tomatoes",
+          "sr": "paradajz"
+        }
+      },
+      {
+        "amount": "1",
+        "name": {
+          "en": "onion",
+          "sr": "crni luk"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 head",
+          "sr": "1 glavica"
+        },
+        "name": {
+          "en": "garlic",
+          "sr": "beli luk"
+        }
+      },
+      {
+        "amount": {
+          "en": "3 tbsp",
+          "sr": "3 kašike"
+        },
+        "name": {
+          "en": "olive oil",
+          "sr": "maslinovo ulje"
+        }
+      },
+      {
+        "amount": "500 ml",
+        "name": {
+          "en": "vegetable stock",
+          "sr": "povrtni temeljac"
+        }
+      },
+      {
+        "amount": "100 ml",
+        "name": {
+          "en": "cream",
+          "sr": "slatka pavlaka"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 handful",
+          "sr": "šaka"
+        },
+        "name": {
+          "en": "basil",
+          "sr": "bosiljak"
+        }
+      },
+      {
+        "amount": {
+          "en": "1 tsp",
+          "sr": "1 kašičica"
+        },
+        "name": {
+          "en": "salt",
+          "sr": "so"
+        }
+      }
     ],
-    "steps": [
-      "Heat the oven to 200 °C. Halve the tomatoes, quarter the onion and halve the garlic head across.",
-      "Toss everything with the olive oil and salt and roast for 35 minutes.",
-      "Squeeze the garlic out of its skins into a pot with the tomatoes, onion and stock.",
-      "Simmer for 10 minutes, add the basil and blend until smooth.",
-      "Stir in the cream and adjust the seasoning."
-    ],
-    "tags": ["vegetarian", "gluten-free", "comfort"]
+    "steps": {
+      "en": [
+        "Heat the oven to 200 °C. Halve the tomatoes, quarter the onion and halve the garlic head across.",
+        "Toss everything with the olive oil and salt and roast for 35 minutes.",
+        "Squeeze the garlic out of its skins into a pot with the tomatoes, onion and stock.",
+        "Simmer for 10 minutes, add the basil and blend until smooth.",
+        "Stir in the cream and adjust the seasoning."
+      ],
+      "sr": [
+        "Zagrejte rernu na 200 °C. Prepolovite paradajz, isecite crni luk na četvrtine i prepolovite glavicu belog luka.",
+        "Sve pomešajte sa maslinovim uljem i solju i pecite 35 minuta.",
+        "Istisnite beli luk iz ljuski u lonac sa paradajzom, crnim lukom i temeljcem.",
+        "Krčkajte 10 minuta, dodajte bosiljak i izblendajte u glatku supu.",
+        "Umešajte pavlaku i doterajte začine."
+      ]
+    },
+    "tags": {
+      "en": [
+        "vegetarian",
+        "gluten-free",
+        "comfort"
+      ],
+      "sr": [
+        "vegetarijansko",
+        "bez glutena",
+        "domaće"
+      ]
+    }
   }
 ]

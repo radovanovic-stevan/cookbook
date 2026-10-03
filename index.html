@@ -15,29 +15,33 @@
   <header class="topbar">
     <div class="brand">
       <span class="brand-icon" aria-hidden="true">📖</span>
-      <span class="brand-name">Family Cookbook</span>
+      <span class="brand-name" data-i18n="app.title">Family Cookbook</span>
     </div>
 
     <div class="search">
-      <input id="search" type="search" placeholder="Search recipes…" aria-label="Search recipes" autocomplete="off">
+      <input id="search" type="search" data-i18n-placeholder="search.placeholder" data-i18n-aria="search.placeholder" autocomplete="off">
     </div>
 
     <div class="actions">
+      <div class="seg lang-switch" role="radiogroup" data-i18n-aria="lang.label">
+        <button type="button" data-lang="en" role="radio" title="English">EN</button>
+        <button type="button" data-lang="sr" role="radio" title="Srpski">SR</button>
+      </div>
       <button id="toggleFilters" class="btn" aria-expanded="false" aria-controls="filters">
-        Filters <span id="filterCount" class="badge" hidden>0</span>
+        <span data-i18n="filters.button">Filters</span> <span id="filterCount" class="badge" hidden>0</span>
       </button>
-      <button id="newRecipe" class="btn btn-primary">+ New recipe</button>
+      <button id="newRecipe" class="btn btn-primary" data-i18n="newRecipe">+ New recipe</button>
       <div class="menu">
         <button id="dataMenuBtn" class="btn" aria-haspopup="true" aria-expanded="false">
-          Data <span id="syncDot" class="dot" title="Saved"></span>
+          <span data-i18n="data.button">Data</span> <span id="syncDot" class="dot"></span>
         </button>
         <div id="dataMenu" class="menu-list" role="menu" hidden>
           <p id="syncStatus" class="menu-status"></p>
-          <button role="menuitem" data-action="export">⬇ Download recipes.json</button>
-          <button role="menuitem" data-action="import">⬆ Import recipes.json…</button>
-          <button role="menuitem" data-action="github">☁ Save to GitHub…</button>
+          <button role="menuitem" data-action="export" data-i18n="menu.export"></button>
+          <button role="menuitem" data-action="import" data-i18n="menu.import"></button>
+          <button role="menuitem" data-action="github" data-i18n="menu.github"></button>
           <hr>
-          <button role="menuitem" data-action="reset">↺ Discard browser changes</button>
+          <button role="menuitem" data-action="reset" data-i18n="menu.reset"></button>
         </div>
       </div>
       <input id="importFile" type="file" accept="application/json,.json" hidden>
@@ -47,123 +51,131 @@
   <section id="filters" class="filters" hidden>
     <div class="filter-group filter-ingredients">
       <div class="filter-head">
-        <h3>Ingredients</h3>
-        <div class="seg" role="radiogroup" aria-label="Ingredient matching">
-          <button type="button" data-mode="all" class="active" role="radio" aria-checked="true">Has all</button>
-          <button type="button" data-mode="any" role="radio" aria-checked="false">Has any</button>
+        <h3 data-i18n="f.ingredients"></h3>
+        <div class="seg" id="ingredientMode" role="radiogroup">
+          <button type="button" data-mode="all" class="active" role="radio" aria-checked="true" data-i18n="f.hasAll"></button>
+          <button type="button" data-mode="any" role="radio" aria-checked="false" data-i18n="f.hasAny"></button>
         </div>
-        <input id="ingredientSearch" type="search" placeholder="Find ingredient…" aria-label="Find ingredient">
+        <input id="ingredientSearch" type="search" data-i18n-placeholder="f.findIngredient" data-i18n-aria="f.findIngredient">
       </div>
       <div id="ingredientChips" class="chips"></div>
     </div>
     <div class="filter-row">
       <div class="filter-group">
-        <h3>Preparation</h3>
+        <h3 data-i18n="f.preparation"></h3>
         <div id="preparationChips" class="chips"></div>
       </div>
       <div class="filter-group">
-        <h3>Course</h3>
+        <h3 data-i18n="f.course"></h3>
         <div id="categoryChips" class="chips"></div>
       </div>
       <div class="filter-group">
-        <h3>Cuisine</h3>
+        <h3 data-i18n="f.cuisine"></h3>
         <div id="cuisineChips" class="chips"></div>
       </div>
       <div class="filter-group">
-        <h3>Difficulty</h3>
+        <h3 data-i18n="f.difficulty"></h3>
         <div id="difficultyChips" class="chips"></div>
       </div>
       <div class="filter-group">
-        <h3>Total time</h3>
+        <h3 data-i18n="f.time"></h3>
         <label class="range">
-          <input id="maxTime" type="range" min="0" max="240" step="5" value="240">
-          <span id="maxTimeLabel">Any</span>
+          <input id="maxTime" type="range" min="0" max="240" step="5" value="240" data-i18n-aria="f.time">
+          <span id="maxTimeLabel"></span>
         </label>
       </div>
     </div>
     <div class="filter-foot">
       <span id="resultCount"></span>
-      <button id="clearFilters" class="btn btn-link" type="button">Clear all filters</button>
+      <button id="clearFilters" class="btn btn-link" type="button" data-i18n="f.clear"></button>
     </div>
   </section>
 
   <main class="stage">
-    <button id="prevBtn" class="nav nav-prev" aria-label="Previous page">‹</button>
+    <button id="prevBtn" class="nav nav-prev" data-i18n-aria="nav.prev">‹</button>
     <div id="book" class="book" aria-live="polite">
       <div id="pages" class="pages"></div>
     </div>
-    <button id="nextBtn" class="nav nav-next" aria-label="Next page">›</button>
+    <button id="nextBtn" class="nav nav-next" data-i18n-aria="nav.next">›</button>
   </main>
-  <p class="hint">Use ← → keys, swipe, or click the page corners to turn pages.</p>
+  <p class="hint" data-i18n="hint"></p>
 
   <!-- Create / edit recipe -->
   <dialog id="recipeDialog" class="dialog">
     <form id="recipeForm" method="dialog" novalidate>
       <header class="dialog-head">
-        <h2 id="recipeDialogTitle">New recipe</h2>
-        <button type="button" class="icon-btn" data-close aria-label="Close">✕</button>
+        <h2 id="recipeDialogTitle"></h2>
+        <div class="form-lang">
+          <span data-i18n="form.lang"></span>
+          <div class="seg seg-light" id="formLang" role="radiogroup">
+            <button type="button" data-form-lang="en" role="radio">English</button>
+            <button type="button" data-form-lang="sr" role="radio">Srpski</button>
+          </div>
+        </div>
+        <button type="button" class="icon-btn" data-close data-i18n-aria="form.close">✕</button>
       </header>
       <div class="dialog-body">
+        <p class="form-hint" data-i18n="form.langHint"></p>
         <div class="grid">
-          <label class="span-3">Title
-            <input name="title" required maxlength="80" placeholder="Grandma's apple pie">
+          <label class="span-3"><span data-i18n="form.title"></span>
+            <input name="title" data-text maxlength="80" data-i18n-placeholder="ph.title">
           </label>
-          <label>Emoji
+          <label><span data-i18n="form.emoji"></span>
             <input name="emoji" maxlength="4" placeholder="🍰">
           </label>
-          <label class="span-4">Short description
-            <textarea name="description" rows="2" maxlength="240" placeholder="What makes this dish special?"></textarea>
+          <label class="span-4"><span data-i18n="form.description"></span>
+            <textarea name="description" data-text rows="2" maxlength="240" data-i18n-placeholder="ph.description"></textarea>
           </label>
-          <label class="span-2">Preparation
-            <input name="preparation" list="dl-preparation" placeholder="Baked" required>
+          <label class="span-2"><span data-i18n="f.preparation"></span>
+            <input name="preparation" data-text list="dl-preparation" data-i18n-placeholder="ph.preparation">
           </label>
-          <label class="span-2">Course
-            <input name="category" list="dl-category" placeholder="Dessert">
+          <label class="span-2"><span data-i18n="f.course"></span>
+            <input name="category" data-text list="dl-category" data-i18n-placeholder="ph.category">
           </label>
-          <label class="span-2">Cuisine
-            <input name="cuisine" list="dl-cuisine" placeholder="French">
+          <label class="span-2"><span data-i18n="f.cuisine"></span>
+            <input name="cuisine" data-text list="dl-cuisine" data-i18n-placeholder="ph.cuisine">
           </label>
-          <label class="span-2">Difficulty
+          <label class="span-2"><span data-i18n="f.difficulty"></span>
             <select name="difficulty">
-              <option>Easy</option>
-              <option>Medium</option>
-              <option>Hard</option>
+              <option value="Easy" data-i18n="difficulty.Easy"></option>
+              <option value="Medium" data-i18n="difficulty.Medium"></option>
+              <option value="Hard" data-i18n="difficulty.Hard"></option>
             </select>
           </label>
-          <label>Prep (min)
+          <label><span data-i18n="form.prepMin"></span>
             <input name="prepTime" type="number" min="0" step="1" value="0">
           </label>
-          <label>Cook (min)
+          <label><span data-i18n="form.cookMin"></span>
             <input name="cookTime" type="number" min="0" step="1" value="0">
           </label>
-          <label>Servings
+          <label><span data-i18n="form.servings"></span>
             <input name="servings" type="number" min="1" step="1" value="4">
           </label>
-          <label>Image URL
-            <input name="image" type="url" placeholder="optional">
+          <label><span data-i18n="form.image"></span>
+            <input name="image" type="url" data-i18n-placeholder="ph.optional">
           </label>
         </div>
 
         <fieldset>
-          <legend>Ingredients</legend>
+          <legend data-i18n="f.ingredients"></legend>
           <div id="ingredientRows" class="rows"></div>
-          <button type="button" class="btn btn-small" id="addIngredient">+ Add ingredient</button>
+          <button type="button" class="btn btn-small" id="addIngredient" data-i18n="form.addIngredient"></button>
         </fieldset>
 
         <fieldset>
-          <legend>Method</legend>
+          <legend data-i18n="r.method"></legend>
           <div id="stepRows" class="rows"></div>
-          <button type="button" class="btn btn-small" id="addStep">+ Add step</button>
+          <button type="button" class="btn btn-small" id="addStep" data-i18n="form.addStep"></button>
         </fieldset>
 
-        <label>Tags <small>(comma separated)</small>
-          <input name="tags" placeholder="vegetarian, quick">
+        <label><span><span data-i18n="form.tags"></span> <small data-i18n="form.tagsHint"></small></span>
+          <input name="tags" data-i18n-placeholder="ph.tags">
         </label>
         <p id="formError" class="form-error" role="alert"></p>
       </div>
       <footer class="dialog-foot">
-        <button type="button" class="btn" data-close>Cancel</button>
-        <button type="submit" class="btn btn-primary">Save recipe</button>
+        <button type="button" class="btn" data-close data-i18n="form.cancel"></button>
+        <button type="submit" class="btn btn-primary" data-i18n="form.save"></button>
       </footer>
     </form>
   </dialog>
@@ -172,25 +184,24 @@
   <dialog id="githubDialog" class="dialog dialog-narrow">
     <form id="githubForm" method="dialog">
       <header class="dialog-head">
-        <h2>Save to GitHub</h2>
-        <button type="button" class="icon-btn" data-close aria-label="Close">✕</button>
+        <h2 data-i18n="gh.title"></h2>
+        <button type="button" class="icon-btn" data-close data-i18n-aria="form.close">✕</button>
       </header>
       <div class="dialog-body">
-        <p class="muted">Commits your recipes to <code>recipes.json</code> in the repository. The site redeploys automatically after the commit (about a minute).
-          You need a <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">fine-grained token</a> with <em>Contents: read &amp; write</em> on this repository.</p>
+        <p class="muted" data-i18n-html="gh.intro"></p>
         <div class="grid">
-          <label class="span-2">Owner<input name="owner" required></label>
-          <label class="span-2">Repository<input name="repo" required></label>
-          <label class="span-2">Branch<input name="branch" placeholder="default branch"></label>
-          <label class="span-2">File path<input name="path" required value="data/recipes.json"></label>
-          <label class="span-4">Token<input name="token" type="password" required autocomplete="off"></label>
-          <label class="span-4 check"><input name="remember" type="checkbox"> Remember token in this browser</label>
+          <label class="span-2"><span data-i18n="gh.owner"></span><input name="owner" required></label>
+          <label class="span-2"><span data-i18n="gh.repo"></span><input name="repo" required></label>
+          <label class="span-2"><span data-i18n="gh.branch"></span><input name="branch" data-i18n-placeholder="gh.branchPh"></label>
+          <label class="span-2"><span data-i18n="gh.path"></span><input name="path" required value="data/recipes.json"></label>
+          <label class="span-4"><span data-i18n="gh.token"></span><input name="token" type="password" required autocomplete="off"></label>
+          <label class="span-4 check"><input name="remember" type="checkbox"> <span data-i18n="gh.remember"></span></label>
         </div>
         <p id="githubError" class="form-error" role="alert"></p>
       </div>
       <footer class="dialog-foot">
-        <button type="button" class="btn" data-close>Cancel</button>
-        <button type="submit" class="btn btn-primary" id="githubSubmit">Commit recipes.json</button>
+        <button type="button" class="btn" data-close data-i18n="form.cancel"></button>
+        <button type="submit" class="btn btn-primary" id="githubSubmit" data-i18n="gh.submit"></button>
       </footer>
     </form>
   </dialog>
@@ -198,9 +209,11 @@
   <datalist id="dl-preparation"></datalist>
   <datalist id="dl-category"></datalist>
   <datalist id="dl-cuisine"></datalist>
+  <datalist id="dl-ingredients"></datalist>
 
   <div id="toast" class="toast" role="status" hidden></div>
 
+  <script src="js/i18n.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

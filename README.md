@@ -21,29 +21,42 @@ A static, flip-through cookbook. Recipes live in [`data/recipes.json`](data/reci
 
   The dot on the **Data** button turns orange when the browser has changes that aren't in `recipes.json` yet.
 
+## Languages
+
+The interface is available in **English** and **Serbian** (Latin script). Use the **EN | SR** switch in the top bar. The choice is remembered. You can also link to a language with `?lang=sr` or `?lang=en`. On first visit the language is picked from the browser's language settings.
+
+Interface strings live in [`js/i18n.js`](js/i18n.js).
+
+Recipes can be translated too. Any text field can be a plain string, used for both languages, or an object with one value per language. Steps and tags can be a plain array, or one array per language. If a translation is missing, the other language is shown, along with a small "not fully translated yet" note.
+
+In the recipe form, **Writing in English / Srpski** chooses which language you are editing. Switch it to add a translation. Text not yet translated shows the other language in grey as a hint. Selected filters carry over when you switch language, and search matches both languages.
+
 ## Recipe format
 
 ```json
 {
   "id": "margherita-pizza",
-  "title": "Margherita Pizza",
+  "title": { "en": "Margherita Pizza", "sr": "Pica margarita" },
   "emoji": "🍕",
   "image": "https://… (optional)",
-  "description": "…",
-  "category": "Main",
-  "preparation": "Baked",
-  "cuisine": "Italian",
+  "description": { "en": "…", "sr": "…" },
+  "category": { "en": "Main", "sr": "Glavno jelo" },
+  "preparation": { "en": "Baked", "sr": "Pečeno u rerni" },
+  "cuisine": { "en": "Italian", "sr": "Italijanska" },
   "difficulty": "Easy | Medium | Hard",
   "prepTime": 90,
   "cookTime": 10,
   "servings": 2,
-  "ingredients": [{ "amount": "300 g", "name": "flour" }],
-  "steps": ["…"],
-  "tags": ["vegetarian"]
+  "ingredients": [
+    { "amount": "300 g", "name": { "en": "flour", "sr": "brašno" } },
+    { "amount": { "en": "2 tbsp", "sr": "2 kašike" }, "name": { "en": "olive oil", "sr": "maslinovo ulje" } }
+  ],
+  "steps": { "en": ["…"], "sr": ["…"] },
+  "tags": { "en": ["vegetarian"], "sr": ["vegetarijansko"] }
 }
 ```
 
-Use the same ingredient name in every recipe (e.g. always `olive oil`) so the ingredient filter groups them.
+The simple form, `"title": "Margherita Pizza"` and `"steps": ["…"]`, still works. Use the same ingredient name in every recipe (e.g. always `olive oil` / `maslinovo ulje`) so the ingredient filter groups them.
 
 ## Run locally
 

@@ -161,6 +161,17 @@ input, select, textarea { font: inherit; color: inherit; }
 .range { display: flex; align-items: center; gap: 10px; }
 .range input { accent-color: var(--gold); width: 160px; }
 
+/* Language switches */
+.lang-switch button { padding: 5px 10px; font-size: 14px; font-weight: 600; letter-spacing: .5px; }
+.lang-switch button.active { background: var(--gold); color: var(--ink); }
+.form-lang { display: flex; align-items: center; gap: 8px; margin-left: auto; margin-right: 12px; font-size: 15px; color: var(--ink-soft); }
+.seg-light { border-color: var(--line); }
+.seg-light button { color: var(--ink); padding: 4px 12px; font-size: 15px; }
+.seg-light button.active { background: var(--accent); color: #fff; }
+.form-hint { margin: 0; font-size: 15px; color: var(--ink-soft); font-style: italic; }
+.dialog input::placeholder, .dialog textarea::placeholder { color: #a8957c; font-style: italic; }
+.untranslated { margin: 8px 0 0; font-size: 14px; font-style: italic; color: var(--ink-soft); }
+
 /* ---------- Stage & book ---------- */
 .stage {
   flex: 1;
@@ -508,9 +519,12 @@ input, select, textarea { font: inherit; color: inherit; }
   .span-3, .span-4 { grid-column: span 2; }
   .row.ing { grid-template-columns: 84px 1fr 30px; }
   .filters { padding: 12px 16px; }
+  .dialog-head { flex-wrap: wrap; gap: 8px; }
+  .form-lang { order: 3; flex-basis: 100%; margin: 0; }
 }
 @media (max-width: 480px) {
   .ingredients { columns: 1; }
+  .toc-item .toc-meta { display: none; }
   .stats { grid-template-columns: repeat(2, 1fr); row-gap: 8px; }
   .stats div:nth-child(2) { border-right: none; }
   .actions .btn { padding: 6px 10px; }
