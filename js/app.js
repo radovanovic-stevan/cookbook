@@ -852,7 +852,7 @@
   function openGithub() {
     let saved = {};
     try { saved = JSON.parse(store.get(GH_KEY) || "{}"); } catch { /* ignore */ }
-    const g = { ...guessRepo(), path: DATA_URL, branch: "", ...saved };
+    const g = { ...guessRepo(), path: DATA_URL, branch: "main", ...saved };
     const f = $("#githubForm").elements;
     f.owner.value = g.owner;
     f.repo.value = g.repo;

@@ -44,8 +44,8 @@ jobs:
           path: _site
 
   deploy:
-    # Publish only from the repository's default branch.
-    if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    # Publish only from main.
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:

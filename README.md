@@ -16,7 +16,7 @@ A static, flip-through cookbook. Recipes live in [`data/recipes.json`](data/reci
   - free-text search
 - **JSON storage**: the book loads `data/recipes.json`. GitHub Pages can't write files, so your edits are kept in the browser until you save them with the **Data** menu:
   - **Download recipes.json**: download the file and commit it to `data/recipes.json`.
-  - **Save to GitHub…**: commit `data/recipes.json` straight from the page with a [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new) that has *Contents: read & write* on this repo. The commit redeploys the site.
+  - **Save to GitHub…**: commit `data/recipes.json` (on `main` by default) straight from the page with a [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new) that has *Contents: read & write* on this repo. The commit redeploys the site.
   - **Import recipes.json…** / **Discard browser changes**.
 
   The dot on the **Data** button turns orange when the browser has changes that aren't in `recipes.json` yet.
@@ -69,6 +69,6 @@ python3 -m http.server 8000
 
 ## Deployment
 
-`.github/workflows/pages.yml` validates `recipes.json` on every push and pull request, and deploys the site to GitHub Pages from the default branch.
+`.github/workflows/pages.yml` validates `recipes.json` on every push and pull request, and deploys the site to GitHub Pages from `main`.
 
 To set it up once, go to **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**.
